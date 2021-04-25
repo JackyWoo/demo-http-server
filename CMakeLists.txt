@@ -3,4 +3,7 @@ project(demo_http_server)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(demo_http_server main.cpp)
+set (USE_INTERNAL_POCO_LIBRARY TRUE)
+
+add_subdirectory(src)
+add_subdirectory(poco-cmake)
